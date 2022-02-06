@@ -21,7 +21,7 @@ const userInLondon = {
 
 describe('getUsersIn50MilesGPS', () => {
   describe('given an array of users data', () => {
-    it('filters out users whose current coordinates are not within 50 miles from London', () => {
+    it('filters out users whose current coordinates are not within 50 miles to London', () => {
       expect(
         getUsersIn50MilesGPS([userInLondonRadius, userOutsideLondonRadius]),
       ).toEqual([userInLondonRadius]);
