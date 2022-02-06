@@ -15,7 +15,7 @@ This small NodeJs/Express API calls https://bpdts-test-app.herokuapp.com/ and re
 > npm start
 ```
 
-#### Users In London Api docs
+#### Api docs
 
 **/listed**
 
