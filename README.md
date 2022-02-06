@@ -2,11 +2,11 @@
 
 <img src="https://images.pexels.com/photos/374815/pexels-photo-374815.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" height="270">
 
-### Description
+## Description
 
 This small NodeJs/Express API calls https://bpdts-test-app.herokuapp.com/ and returns people who are listed as either living in London, or whose current coordinates are within 50 miles of London
 
-#### Getting started
+### Getting started
 
 ```
 > git clone https://github.com/TonyGrimaldi/users-in-london.git
@@ -15,7 +15,7 @@ This small NodeJs/Express API calls https://bpdts-test-app.herokuapp.com/ and re
 > npm start
 ```
 
-#### Api docs
+## Api specs
 
 **/listed**
 
