@@ -15,7 +15,6 @@ const isInFiftyMilesFromLondon = (lat, lon) => {
     if (dist > 1) {
       dist = 1;
     }
-    console.log(dist);
     dist = Math.acos(dist);
     dist = (dist * 180) / Math.PI;
     dist = dist * 60 * 1.1515;
