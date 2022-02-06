@@ -1,6 +1,6 @@
 import { LONDON_COORDINATES } from './constants.js';
 
-const isInFiftyMilesFromLondon = (lat, lon) => {
+const isInFiftyMilesToLondon = (lat, lon) => {
   const { lat: londonLat, lon: londonLon } = LONDON_COORDINATES;
   if (londonLat == lat && londonLon == lon) {
     return true;
@@ -23,12 +23,12 @@ const isInFiftyMilesFromLondon = (lat, lon) => {
 };
 
 export const getUsersIn50MilesGPS = (usersData) => {
-  const usersInFiftyMilesFromLondon = [];
+  const usersInFiftyMilesToLondon = [];
   usersData.reduce((acc, current) => {
     return (
-      isInFiftyMilesFromLondon(current.latitude, current.longitude) &&
-      usersInFiftyMilesFromLondon.push(current)
+      isInFiftyMilesToLondon(current.latitude, current.longitude) &&
+      usersInFiftyMilesToLondon.push(current)
     );
   }, 0);
-  return usersInFiftyMilesFromLondon;
+  return usersInFiftyMilesToLondon;
 };
